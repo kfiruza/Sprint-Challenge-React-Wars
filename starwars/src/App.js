@@ -1,7 +1,14 @@
 import React from 'react';
 import './App.css';
+import SWCard from "./components/SWCard";
+import ReactDom from "react-dom";
+import { Route } from 'react-router-dom';
+
+
 
 const App = () => {
+
+  
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -10,8 +17,10 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className= "App">
+      <h1 className= "Header">React Wars</h1>
+      <SWCard />
+      
     </div>
   );
 }
