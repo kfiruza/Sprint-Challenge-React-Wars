@@ -1,0 +1,33 @@
+import React from 'react';
+import styled from "styled-components";
+
+const Card = styled.div`
+    width: 100%;
+    margin: 2%;
+    background-color: orange;
+    border-radius: 5%;
+`
+const SWName = styled.h3`
+    font-weight: bold;
+`
+
+const StyledInfo = styled.h5`
+    color: white;
+`
+
+
+const InfoCard = props => {
+    
+    console.log('In the item');
+    console.log(props);
+return (
+ <Card>
+<SWName> {props.name} </SWName>
+<StyledInfo>Gender: {props.gender} </StyledInfo>
+<StyledInfo>Height: {props.height} cm</StyledInfo>
+<StyledInfo>Weight: {props.mass} kg </StyledInfo>            
+ </Card>
+    )
+}
+
+export default InfoCard
