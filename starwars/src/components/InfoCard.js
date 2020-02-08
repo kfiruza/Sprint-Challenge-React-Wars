@@ -17,8 +17,7 @@ const StyledInfo = styled.h5`
 
 
 const InfoCard = props => {
-    // Stretch goal 
-
+    
     console.log('In the item');
     console.log(props);
 return (
